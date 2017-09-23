@@ -45,7 +45,7 @@ function callback_16bit(s,BytesAvailable,p)
         elseif(data(1) == 255 && data(2) == 165 && data(3) == 91)   %无符号整型帧头 0xff，0xa5，0x5b
             %确认为一帧数据
             data(1:3) = [];     %同上
-            for i = 1:10
+            for i = 1:9
                 mat(i,1) = data(1)*256+data(2);
                 data(1:2) = [];
             end
