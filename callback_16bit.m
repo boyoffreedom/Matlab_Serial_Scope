@@ -82,12 +82,4 @@ function callback_16bit(s,BytesAvailable,p)
     end
     drawnow                 %更新图形窗口
     set(SUBP(1),'XLim',[x-350 x+50],'YLim',[ymin(1)-50 ymax(1)+50]);
-    set(SUBP(2),'XLim',[x-350 x+50],'YLim',[ymin(2)-50 ymax(2)+50]);
-    set(SUBP(3),'XLim',[x-350 x+50],'YLim',[ymin(3)-50 ymax(3)+50]);
-    set(SUBP(4),'XLim',[x-350 x+50],'YLim',[ymin(4)-50 ymax(4)+50]);
-    set(SUBP(5),'XLim',[x-350 x+50],'YLim',[ymin(5)-50 ymax(5)+50]);
-    set(SUBP(6),'XLim',[x-350 x+50],'YLim',[ymin(6)-50 ymax(6)+50]);
-    set(SUBP(7),'XLim',[x-350 x+50],'YLim',[ymin(7)-50 ymax(7)+50]);
-    set(SUBP(8),'XLim',[x-350 x+50],'YLim',[ymin(8)-50 ymax(8)+50]);
-    set(SUBP(9),'XLim',[x-350 x+50],'YLim',[ymin(9)-50 ymax(9)+50]);
 end 
