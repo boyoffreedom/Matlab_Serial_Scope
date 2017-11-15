@@ -97,8 +97,7 @@ s.BytesAvailableFcn = {@callback_16bit,H};      %回调函数地址，以及相�
 
 try
     fopen(s);                               %打开串口
+    fprintf('串口打开成功\n');
 catch err
     fprintf('串口打开失败。\n');
 end
-
-fprintf('串口打开成功\n');
