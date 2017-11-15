@@ -81,8 +81,8 @@ title('转向PWM');
 xlabel('采样点数');
 ylabel('采样数值');
 
+linkaxes(SUBP,'x');
 H = [h1;h2;h3;h4;h5;h6;h7;h8;h9];
-
 
 %串口部分设置
 s = serial('COM17');            %选择串口~
