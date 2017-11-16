@@ -21,7 +21,7 @@ function callback_16bit(s,BytesAvailable,p)
         if(data(1) == 255 && data(2) == 165 && data(3) == 90)   %有符号整型帧头 0xff,0xa5,0x5a
             %确认为一帧数据
             data(1:3) = [];             %清空帧头位
-            for i = 1:9                 %将7个通道的数据提取出来
+            for i = 1:9                 %将9个通道的数据提取出来
                 mat(i,1) = data(1)*256+data(2);     %将两个8位数据合并成16位数据
                 if (mat(i,1) > 32768)               %提取符号位
                     mat(i,1) = -(65536-mat(i,1));   %求补码
